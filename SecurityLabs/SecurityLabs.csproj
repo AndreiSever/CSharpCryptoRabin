@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B98F345-471F-44D1-B3C5-2953A4F6B686}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecurityLabs</RootNamespace>
+    <AssemblyName>SecurityLabs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BruteForce\BruteForceAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BruteForce\BruteForceAnswer.Designer.cs">
+      <DependentUpon>BruteForceAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BruteForce\BruteForceMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BruteForce\BruteForceMain.Designer.cs">
+      <DependentUpon>BruteForceMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BruteForce\BruteForceTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BruteForce\BruteForceTask.Designer.cs">
+      <DependentUpon>BruteForceTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legendre\Legendre.cs" />
+    <Compile Include="Legendre\LegendreAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legendre\LegendreAnswer.designer.cs">
+      <DependentUpon>LegendreAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legendre\LegendreMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legendre\LegendreMain.designer.cs">
+      <DependentUpon>LegendreMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legendre\LegendreTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legendre\LegendreTask.designer.cs">
+      <DependentUpon>LegendreTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GeneralFunctions.cs" />
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monoalphabetic\MonoalphabeticMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monoalphabetic\MonoalphabeticMain.Designer.cs">
+      <DependentUpon>MonoalphabeticMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polyalphabetic\Polyalphabetic.cs" />
+    <Compile Include="Polyalphabetic\PolyalphabeticAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polyalphabetic\PolyalphabeticAnswer.designer.cs">
+      <DependentUpon>PolyalphabeticAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polyalphabetic\PolyalphabeticMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polyalphabetic\PolyalphabeticMain.designer.cs">
+      <DependentUpon>PolyalphabeticMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polyalphabetic\PolyalphabeticTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polyalphabetic\PolyalphabeticTask.designer.cs">
+      <DependentUpon>PolyalphabeticTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rabin\Rabin.cs" />
+    <Compile Include="Rabin\RabinAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabin\RabinAnswer.Designer.cs">
+      <DependentUpon>RabinAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rabin\RabinTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabin\RabinTask.Designer.cs">
+      <DependentUpon>RabinTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rabin\RabinMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabin\RabinMain.Designer.cs">
+      <DependentUpon>RabinMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSAsignature\RSAsingatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSAsignature\RSAsingatureForm.Designer.cs">
+      <DependentUpon>RSAsingatureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BruteForce\Vigenere.cs" />
+    <EmbeddedResource Include="BruteForce\BruteForceAnswer.resx">
+      <DependentUpon>BruteForceAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BruteForce\BruteForceMain.resx">
+      <DependentUpon>BruteForceMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BruteForce\BruteForceTask.resx">
+      <DependentUpon>BruteForceTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legendre\LegendreAnswer.resx">
+      <DependentUpon>LegendreAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legendre\LegendreMain.resx">
+      <DependentUpon>LegendreMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legendre\LegendreTask.resx">
+      <DependentUpon>LegendreTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monoalphabetic\MonoalphabeticMain.resx">
+      <DependentUpon>MonoalphabeticMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polyalphabetic\PolyalphabeticAnswer.resx">
+      <DependentUpon>PolyalphabeticAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polyalphabetic\PolyalphabeticMain.resx">
+      <DependentUpon>PolyalphabeticMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polyalphabetic\PolyalphabeticTask.resx">
+      <DependentUpon>PolyalphabeticTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rabin\RabinAnswer.resx">
+      <DependentUpon>RabinAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rabin\RabinMain.resx">
+      <DependentUpon>RabinMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rabin\RabinTask.resx">
+      <DependentUpon>RabinTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSAsignature\RSAsingatureForm.resx">
+      <DependentUpon>RSAsingatureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Documents\ТЗ_Криптоанализ_методом_полного_перебора.docx" />
+    <None Include="Documents\ТЗ_Моноалфавитный_шифр.docx" />
+    <None Include="Documents\ТЗ_символы_Лежандра.docx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\lab2_example.rtf" />
+    <None Include="Resources\lab2_task.rtf" />
+    <None Include="Resources\lab1_theory.rtf" />
+    <None Include="Resources\lab2_theory.rtf" />
+    <None Include="Resources\lab4_example.rtf" />
+    <None Include="Resources\lab4_task.rtf" />
+    <None Include="Resources\lab4_theory.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab5_example.rtf" />
+    <None Include="Resources\lab5_task.rtf" />
+    <None Include="Resources\lab5_theory.rtf" />
+    <None Include="Resources\lab8_example.rtf" />
+    <None Include="Resources\lab8_task.rtf" />
+    <None Include="Resources\lab8_theory.rtf" />
+    <None Include="Resources\primes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sholohov.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primesforRabin.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
